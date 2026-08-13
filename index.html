@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover"
+    >
+
+    <meta
+        name="theme-color"
+        content="#212155"
+    >
+
+    <meta
+        name="apple-mobile-web-app-capable"
+        content="yes"
+    >
+
+    <title>SCA-CCP Attendance Scanner</title>
+
+    <base href="./">
+
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
+
+    <script
+        src="https://unpkg.com/html5-qrcode"
+    ></script>
+
+</head>
+
+
+<body>
+
+    <main class="scanner-page">
+
+        <section class="scanner-card">
+
+
+            <!-- HEADER -->
+
+            <header class="scanner-header">
+
+                <img
+                    src="./sca_logo.png"
+                    alt="SCA-CCP Logo"
+                    class="organization-logo"
+                >
+
+
+                <div class="organization">
+
+                    <div class="university">
+                        University of the East Manila
+                    </div>
+
+                    <div class="organization-name">
+                        Student Catholic Action – Christian Communities Program
+                    </div>
+
+                    <div class="office-name">
+                        Campus Ministry Office
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <div class="header-divider"></div>
+
+
+            <!-- PAGE HEADING -->
+
+            <section class="scanner-heading">
+
+                <div class="eyebrow">
+                    CAMPUS MINISTRY
+                </div>
+
+                <h1>
+                    Attendance Scanner
+                </h1>
+
+                <p>
+                    Scan a member QR code to record attendance.
+                </p>
+
+            </section>
+
+
+            <!-- CONTROLS -->
+
+            <section class="scanner-controls">
+
+                <button
+                    id="startScannerBtn"
+                    type="button"
+                    class="start-button"
+                >
+
+                    <span class="button-icon">
+                        QR
+                    </span>
+
+                    Start Scanner
+
+                </button>
+
+
+   <a
+    href="https://script.google.com/macros/s/AKfycbyO5afPbnMP54PlrjHF73v5PWf2Qo-mVmxr9h33FP7s_Flml6DBva8xShp1i395aMB9Vg/exec"
+    class="dashboard-button"
+    aria-label="Back to Dashboard"
+>
+    <span class="dashboard-icon">←</span>
+    <span>Back to Dashboard</span>
+</a>
+
+            </section>
+
+
+            <!-- CAMERA -->
+
+            <section
+                id="reader"
+                class="reader"
+            ></section>
+
+
+            <!-- RESULT -->
+
+            <section
+                id="result"
+                class="result"
+            >
+
+                <div class="result-ready">
+
+                    <div class="ready-icon">
+                        ✓
+                    </div>
+
+                    <div class="ready-title">
+                        Ready to Start
+                    </div>
+
+                    <div class="ready-text">
+                        Tap Start Scanner to activate the camera.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+
+            <footer class="scanner-footer">
+
+                <div>
+                    SCA-CCP Attendance System
+                </div>
+
+                <div>
+                    University of the East Manila
+                </div>
+
+            </footer>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="./app.js?v=OPT04"></script>
+
+    <script>
+
+(function () {
+
+    var dashboardButton =
+        document.getElementById(
+            'dashboardBtn'
+        );
+
+    if (!dashboardButton) {
+        return;
+    }
+
+    dashboardButton.addEventListener(
+        'click',
+        function () {
+
+            window.location.assign(
+                'https://script.google.com/macros/s/AKfycbyO5afPbnMP54PlrjHF73v5PWf2Qo-mVmxr9h33FP7s_Flml6DBva8xShp1i395aMB9Vg/exec'
+            );
+
+        }
+    );
+
+}());
+
+</script>
+</body>
+
+</html>
