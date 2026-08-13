@@ -2,7 +2,7 @@ const DASHBOARD_URL =
     "https://script.google.com/a/macros/ue.edu.ph/s/AKfycbzf47nqQ4lNAhlaORo6ih7BbIUGvQBz-z-7WurnBYVEKKUHB1T0AU15nu8Dqg4zHvX3mQ/exec";
 
 const API_URL =
-    "https://script.google.com/macros/s/AKfycbxHUFDwMsd0K_JjJo9RNwrGX7uG_eea08r5QNv3o7wsRVJMjQdES0R2vJ6qrbOwHRXV/exec";
+    "https://script.google.com/macros/s/AKfycbyO5afPbnMP54PlrjHF73v5PWf2Qo-mVmxr9h33FP7s_Flml6DBva8xShp1i395aMB9Vg/exec";
 
 let scanner;
 
